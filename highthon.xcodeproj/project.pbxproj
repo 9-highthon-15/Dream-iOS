@@ -28,6 +28,10 @@
 		E83672E92B806E7800F9C8B6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83672E82B806E7800F9C8B6 /* Item.swift */; };
 		E83672EB2B806E7900F9C8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83672EA2B806E7900F9C8B6 /* Assets.xcassets */; };
 		E83672EE2B806E7900F9C8B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83672ED2B806E7900F9C8B6 /* Preview Assets.xcassets */; };
+		E84BE7AB2B80F3F400813EC0 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7AA2B80F3F400813EC0 /* ArrowView.swift */; };
+		E84BE7AD2B810C6E00813EC0 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7AC2B810C6E00813EC0 /* ActionSheetView.swift */; };
+		E84BE7B02B81133200813EC0 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7AF2B81133200813EC0 /* UploadView.swift */; };
+		E84BE7B22B81136600813EC0 /* UploadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7B12B81136600813EC0 /* UploadViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		E83672E82B806E7800F9C8B6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E83672EA2B806E7900F9C8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83672ED2B806E7900F9C8B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E84BE7AA2B80F3F400813EC0 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		E84BE7AC2B810C6E00813EC0 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
+		E84BE7AF2B81133200813EC0 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		E84BE7B12B81136600813EC0 /* UploadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewModel.swift; sourceTree = "<group>"; };
 		E87B23442B80A13700EC4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,7 @@
 		857711FC2B80C696008B3890 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E84BE7AE2B81130A00813EC0 /* Upload */,
 				8577120A2B80C78D008B3890 /* MainTab.swift */,
 				857712002B80C6FF008B3890 /* Home */,
 				8577120C2B80C79D008B3890 /* Profile */,
@@ -113,6 +122,8 @@
 			children = (
 				857712012B80C711008B3890 /* HomeView.swift */,
 				857712062B80C772008B3890 /* HomeViewModel.swift */,
+				E84BE7AA2B80F3F400813EC0 /* ArrowView.swift */,
+				E84BE7AC2B810C6E00813EC0 /* ActionSheetView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -192,6 +203,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E84BE7AE2B81130A00813EC0 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				E84BE7AF2B81133200813EC0 /* UploadView.swift */,
+				E84BE7B12B81136600813EC0 /* UploadViewModel.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,17 +289,21 @@
 				857712152B80C8E5008B3890 /* ProfileView.swift in Sources */,
 				E83672E92B806E7800F9C8B6 /* Item.swift in Sources */,
 				8577120F2B80C803008B3890 /* SigninViewModel.swift in Sources */,
+				E84BE7AD2B810C6E00813EC0 /* ActionSheetView.swift in Sources */,
 				857712112B80C815008B3890 /* NotificationView.swift in Sources */,
 				857712092B80C77D008B3890 /* SearchViewModel.swift in Sources */,
 				857712172B80C906008B3890 /* ProfileViewModel.swift in Sources */,
 				857712132B80C81F008B3890 /* NotificationViewModel.swift in Sources */,
+				E84BE7AB2B80F3F400813EC0 /* ArrowView.swift in Sources */,
 				857712072B80C772008B3890 /* HomeViewModel.swift in Sources */,
 				857711FF2B80C6E3008B3890 /* SigninView.swift in Sources */,
 				8577121D2B80CAF4008B3890 /* PostView.swift in Sources */,
+				E84BE7B22B81136600813EC0 /* UploadViewModel.swift in Sources */,
 				857712022B80C711008B3890 /* HomeView.swift in Sources */,
 				857712052B80C75A008B3890 /* SearchView.swift in Sources */,
 				8577120B2B80C78D008B3890 /* MainTab.swift in Sources */,
 				8577121B2B80CAE2008B3890 /* PostViewModel.swift in Sources */,
+				E84BE7B02B81133200813EC0 /* UploadView.swift in Sources */,
 				E83672E52B806E7800F9C8B6 /* highthonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

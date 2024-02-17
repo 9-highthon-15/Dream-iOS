@@ -38,3 +38,7 @@ struct MainTab: View {
         }
     }
 }
+
+#Preview {
+    MainTab()
+}
