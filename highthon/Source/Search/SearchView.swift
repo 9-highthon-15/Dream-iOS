@@ -32,24 +32,32 @@ struct SearchView: View {
             
             HStack{
                 ForEach(first, id: \.self) { title in
-                    Text(title)
-                        .foregroundStyle(Color.gray900)
-                        .font(.custom("Pretendard-Medium", size: 16))
-                        .padding(.vertical, 4)
-                        .padding(.horizontal, 12)
-                        .background(Color.main50)
-                        .cornerRadius(16)
+                    Button{
+                        state.search = title
+                    }label: {
+                        Text(title)
+                            .foregroundStyle(Color.gray900)
+                            .font(.custom("Pretendard-Medium", size: 16))
+                            .padding(.vertical, 4)
+                            .padding(.horizontal, 12)
+                            .background(Color.main50)
+                            .cornerRadius(16)
+                    }
                 }
             }.padding(.bottom,12)
             HStack{
                 ForEach(second, id: \.self) { title in
-                    Text(title)
-                        .foregroundStyle(Color.gray900)
-                        .font(.custom("Pretendard-Medium", size: 16))
-                        .padding(.vertical, 4)
-                        .padding(.horizontal, 12)
-                        .background(Color.main50)
-                        .cornerRadius(16)
+                    Button{
+                        state.search = title
+                    }label: {
+                        Text(title)
+                            .foregroundStyle(Color.gray900)
+                            .font(.custom("Pretendard-Medium", size: 16))
+                            .padding(.vertical, 4)
+                            .padding(.horizontal, 12)
+                            .background(Color.main50)
+                            .cornerRadius(16)
+                    }
                 }
             }.padding(.bottom,12)
         }
