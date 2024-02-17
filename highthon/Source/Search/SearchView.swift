@@ -32,7 +32,7 @@ struct SearchView: View {
             
             HStack{
                 ForEach(first, id: \.self) { title in
-                    Button{
+                    Button {
                         state.search = title
                     }label: {
                         Text(title)
@@ -47,7 +47,7 @@ struct SearchView: View {
             }.padding(.bottom,12)
             HStack{
                 ForEach(second, id: \.self) { title in
-                    Button{
+                    Button {
                         state.search = title
                     }label: {
                         Text(title)
