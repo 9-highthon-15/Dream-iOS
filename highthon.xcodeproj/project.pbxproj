@@ -31,7 +31,6 @@
 		EACC34592B80D7C4009A4F41 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC34582B80D7C4009A4F41 /* SignupView.swift */; };
 		EACC345B2B80D7D6009A4F41 /* SignUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC345A2B80D7D6009A4F41 /* SignUpTextField.swift */; };
 		EACC345D2B80D7E6009A4F41 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC345C2B80D7E6009A4F41 /* SignUpViewModel.swift */; };
-		EACC34632B80FF8D009A4F41 /* SelectInterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC34622B80FF8D009A4F41 /* SelectInterestView.swift */; };
 		EACC34652B811382009A4F41 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC34642B811382009A4F41 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +61,6 @@
 		EACC34582B80D7C4009A4F41 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EACC345A2B80D7D6009A4F41 /* SignUpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTextField.swift; sourceTree = "<group>"; };
 		EACC345C2B80D7E6009A4F41 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		EACC34622B80FF8D009A4F41 /* SelectInterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInterestView.swift; sourceTree = "<group>"; };
 		EACC34642B811382009A4F41 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +132,6 @@
 			children = (
 				857712042B80C75A008B3890 /* SearchView.swift */,
 				857712082B80C77D008B3890 /* SearchViewModel.swift */,
-				EACC34622B80FF8D009A4F41 /* SelectInterestView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -292,7 +289,6 @@
 				857712152B80C8E5008B3890 /* ProfileView.swift in Sources */,
 				E83672E92B806E7800F9C8B6 /* Item.swift in Sources */,
 				8577120F2B80C803008B3890 /* SigninViewModel.swift in Sources */,
-				EACC34632B80FF8D009A4F41 /* SelectInterestView.swift in Sources */,
 				857712112B80C815008B3890 /* NotificationView.swift in Sources */,
 				EACC345D2B80D7E6009A4F41 /* SignUpViewModel.swift in Sources */,
 				EACC34592B80D7C4009A4F41 /* SignupView.swift in Sources */,

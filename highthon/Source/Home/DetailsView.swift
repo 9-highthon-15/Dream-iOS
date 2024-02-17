@@ -13,9 +13,9 @@ struct DetailsView: View {
     @State var first = ["개발", "요리", "운동", "음악"]
     var body: some View {
         NavigationView {
-            ScrollView{
+            ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    HStack(spacing: 0){
+                    HStack(spacing: 0) {
                         Circle()
                             .frame(width: 24,height: 24)
                             .padding(.leading,35)
@@ -43,9 +43,9 @@ struct DetailsView: View {
                             .foregroundStyle(Color.gray900)
                         
                         Spacer()
-                        Button{
+                        Button {
                             
-                        }label: {
+                        } label: {
                             Image("point")
                                 .padding(.trailing,24)
                         }
@@ -71,21 +71,23 @@ struct DetailsView: View {
                                 )
                                 
                         }
-                    }.padding(.leading,35)
-                        .padding(.top,38)
+                    }
+                    .padding(.leading,35)
+                    .padding(.top,38)
                     
-                    HStack{
+                    HStack {
                         Text("1일전")
                             .padding(.leading,35)
                         Spacer()
-                        Button{
+                        Button {
                             
-                        }label: {
+                        } label: {
                             Image("point")
                                 .padding(.trailing,24)
                         }
                         
-                    }.padding(.top,35)
+                    }
+                    .padding(.top,35)
                     Spacer()
                 }
                 .navigationBarTitle("저의 재능을...", displayMode: .inline)

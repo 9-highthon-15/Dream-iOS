@@ -1,15 +1,8 @@
-//
-//  SearchView.swift
-//  highthon
-//
-//  Created by 최시훈 on 2/17/24.
-//
-
 import SwiftUI
 
 struct SearchView: View {
     @State var first = ["개발", "요리", "운동", "음악"]
-    @State var second = ["디자인","미용","게임","악기","어디가셨?"]
+    @State var second = ["디자인","미용","게임","악기","어디가셨"]
     @StateObject private var state = SearchViewModel()
     var body: some View {
         VStack(alignment: .leading,spacing: 0){
@@ -19,6 +12,7 @@ struct SearchView: View {
                         .font(.system(size: 14))
                         .padding(.leading, 16)
                     Button{
+                        state.search = ""
                     } label: {
                         Image("plusButton")
                             .padding(.trailing,16)
