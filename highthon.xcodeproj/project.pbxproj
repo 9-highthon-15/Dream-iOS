@@ -95,6 +95,7 @@
 				857712032B80C714008B3890 /* Search */,
 				8577120D2B80C7A5008B3890 /* Notification */,
 				857711FD2B80C6D4008B3890 /* Signin */,
+				8577121E2B80CFCD008B3890 /* Signup */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -151,6 +152,13 @@
 				8577121C2B80CAF4008B3890 /* PostView.swift */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		8577121E2B80CFCD008B3890 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 		E83672D82B806E7800F9C8B6 = {
