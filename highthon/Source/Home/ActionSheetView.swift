@@ -20,7 +20,7 @@ struct CustomActionSheet: UIViewControllerRepresentable {
 
             let shareAction = UIAlertAction(title: "공유하기", style: .default)
             let reportAction = UIAlertAction(title: "신고하기", style: .destructive)
-            let mailAction = UIAlertAction(title: "메일보기", style: .default)
+            let mailAction = UIAlertAction(title: "약속잡기", style: .default)
             let cancelAction = UIAlertAction(title: "취소", style: .cancel) { _ in
                 self.isPresented = false
             }
