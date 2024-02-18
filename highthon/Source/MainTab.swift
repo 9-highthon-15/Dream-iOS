@@ -20,7 +20,7 @@ struct MainTab: View {
                     Image(systemName: "2.square.fill")
                     Text("Search")
                 }
-            PostView()
+            UploadEndView()
                 .tabItem {
                     Image(systemName: "3.square.fill")
                     Text("Post")
