@@ -18,7 +18,7 @@ struct MainTab: View {
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
-            PostView()
+            UploadEndView()
                 .tabItem {
                     Image(systemName: "plus.app")
                 }
@@ -32,4 +32,8 @@ struct MainTab: View {
                 }
         }
     }
+}
+
+#Preview {
+    MainTab()
 }

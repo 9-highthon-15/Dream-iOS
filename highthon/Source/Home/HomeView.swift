@@ -8,10 +8,12 @@
 
 import SwiftUI
 import UIKit
+import UIKit
 
 struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
     @State var location: String = "서울"
+    @State var selectButton = false
     var body: some View {
         VStack(alignment: .leading) {
             Menu("\(location)") {
