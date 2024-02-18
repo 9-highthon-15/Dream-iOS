@@ -39,6 +39,10 @@
 		E84BE7B42B814CD000813EC0 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7B32B814CD000813EC0 /* WriteView.swift */; };
 		E84BE7B82B815C7500813EC0 /* UploadEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7B72B815C7500813EC0 /* UploadEndView.swift */; };
 		E84BE7BA2B81667E00813EC0 /* TagAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BE7B92B81667E00813EC0 /* TagAddView.swift */; };
+		EACC34592B80D7C4009A4F41 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC34582B80D7C4009A4F41 /* SignupView.swift */; };
+		EACC345B2B80D7D6009A4F41 /* SignUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC345A2B80D7D6009A4F41 /* SignUpTextField.swift */; };
+		EACC345D2B80D7E6009A4F41 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC345C2B80D7E6009A4F41 /* SignUpViewModel.swift */; };
+		EACC34652B811382009A4F41 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC34642B811382009A4F41 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +79,10 @@
 		E84BE7B72B815C7500813EC0 /* UploadEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadEndView.swift; sourceTree = "<group>"; };
 		E84BE7B92B81667E00813EC0 /* TagAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAddView.swift; sourceTree = "<group>"; };
 		E87B23442B80A13700EC4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EACC34582B80D7C4009A4F41 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EACC345A2B80D7D6009A4F41 /* SignUpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTextField.swift; sourceTree = "<group>"; };
+		EACC345C2B80D7E6009A4F41 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		EACC34642B811382009A4F41 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 				8577120D2B80C7A5008B3890 /* Notification */,
 				8577120C2B80C79D008B3890 /* Profile */,
 				8577122A2B812788008B3890 /* API.swift */,
+				857711FD2B80C6D4008B3890 /* Signin */,
+				EACC34572B80D7A2009A4F41 /* Signup */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -127,6 +137,7 @@
 			children = (
 				857712012B80C711008B3890 /* HomeView.swift */,
 				857712062B80C772008B3890 /* HomeViewModel.swift */,
+				EACC34642B811382009A4F41 /* DetailsView.swift */,
 				857712212B80EAEE008B3890 /* HomeListView.swift */,
 				857712232B80F402008B3890 /* CustomTextStyle.swift */,
 				857712252B810379008B3890 /* HomeModel.swift */,
@@ -211,6 +222,16 @@
 				E83672ED2B806E7900F9C8B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EACC34572B80D7A2009A4F41 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				EACC34582B80D7C4009A4F41 /* SignupView.swift */,
+				EACC345A2B80D7D6009A4F41 /* SignUpTextField.swift */,
+				EACC345C2B80D7E6009A4F41 /* SignUpViewModel.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 		E84BE7AE2B81130A00813EC0 /* Upload */ = {
@@ -311,6 +332,9 @@
 				E84BE7AD2B810C6E00813EC0 /* ActionSheetView.swift in Sources */,
 				857712222B80EAEE008B3890 /* HomeListView.swift in Sources */,
 				857712112B80C815008B3890 /* NotificationView.swift in Sources */,
+				EACC345D2B80D7E6009A4F41 /* SignUpViewModel.swift in Sources */,
+				EACC34592B80D7C4009A4F41 /* SignupView.swift in Sources */,
+				EACC34652B811382009A4F41 /* DetailsView.swift in Sources */,
 				857712092B80C77D008B3890 /* SearchViewModel.swift in Sources */,
 				E84BE7B82B815C7500813EC0 /* UploadEndView.swift in Sources */,
 				857712172B80C906008B3890 /* ProfileViewModel.swift in Sources */,
@@ -325,6 +349,7 @@
 				857712022B80C711008B3890 /* HomeView.swift in Sources */,
 				857712052B80C75A008B3890 /* SearchView.swift in Sources */,
 				8577120B2B80C78D008B3890 /* MainTab.swift in Sources */,
+				EACC345B2B80D7D6009A4F41 /* SignUpTextField.swift in Sources */,
 				8577121B2B80CAE2008B3890 /* PostViewModel.swift in Sources */,
 				857712242B80F402008B3890 /* CustomTextStyle.swift in Sources */,
 				857712372B816011008B3890 /* SerchListView.swift in Sources */,
