@@ -12,28 +12,23 @@ struct MainTab: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("Home")
+                    Image(systemName: "house")
                 }
             SearchView()
                 .tabItem {
-                    Image(systemName: "2.square.fill")
-                    Text("Search")
+                    Image(systemName: "magnifyingglass")
                 }
             PostView()
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("Post")
+                    Image(systemName: "plus.app")
                 }
             NotificationView()
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("Notification")
+                    Image(systemName: "bell")
                 }
             ProfileView()
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("Profile")
+                    Image(systemName: "person")
                 }
         }
     }
