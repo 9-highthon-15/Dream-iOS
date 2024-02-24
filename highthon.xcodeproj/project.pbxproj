@@ -28,6 +28,9 @@
 		8577122B2B812788008B3890 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577122A2B812788008B3890 /* API.swift */; };
 		8577122D2B8129C4008B3890 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577122C2B8129C4008B3890 /* ActionSheetView.swift */; };
 		857712372B816011008B3890 /* SerchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857712362B816011008B3890 /* SerchListView.swift */; };
+		857712392B818613008B3890 /* WriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857712382B818613008B3890 /* WriteViewModel.swift */; };
+		8577123B2B81ADB2008B3890 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8577123A2B81ADB2008B3890 /* Launch Screen.storyboard */; };
+		8577123D2B81AEC9008B3890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577123C2B81AEC9008B3890 /* AppDelegate.swift */; };
 		E83672E52B806E7800F9C8B6 /* highthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83672E42B806E7800F9C8B6 /* highthonApp.swift */; };
 		E83672E72B806E7800F9C8B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83672E62B806E7800F9C8B6 /* ContentView.swift */; };
 		E83672E92B806E7800F9C8B6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83672E82B806E7800F9C8B6 /* Item.swift */; };
@@ -66,6 +69,9 @@
 		8577122A2B812788008B3890 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8577122C2B8129C4008B3890 /* ActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
 		857712362B816011008B3890 /* SerchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerchListView.swift; sourceTree = "<group>"; };
+		857712382B818613008B3890 /* WriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewModel.swift; sourceTree = "<group>"; };
+		8577123A2B81ADB2008B3890 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8577123C2B81AEC9008B3890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E83672E12B806E7800F9C8B6 /* highthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = highthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83672E42B806E7800F9C8B6 /* highthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highthonApp.swift; sourceTree = "<group>"; };
 		E83672E62B806E7800F9C8B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,15 +124,14 @@
 		857711FC2B80C696008B3890 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E84BE7AE2B81130A00813EC0 /* Upload */,
 				8577120A2B80C78D008B3890 /* MainTab.swift */,
+				E84BE7AE2B81130A00813EC0 /* Upload */,
 				857712002B80C6FF008B3890 /* Home */,
 				857712192B80CAC7008B3890 /* Post */,
 				857712032B80C714008B3890 /* Search */,
 				8577120D2B80C7A5008B3890 /* Notification */,
 				8577120C2B80C79D008B3890 /* Profile */,
 				8577122A2B812788008B3890 /* API.swift */,
-				857711FD2B80C6D4008B3890 /* Signin */,
 				EACC34572B80D7A2009A4F41 /* Signup */,
 			);
 			path = Source;
@@ -212,6 +217,8 @@
 				E83672E82B806E7800F9C8B6 /* Item.swift */,
 				E83672EA2B806E7900F9C8B6 /* Assets.xcassets */,
 				E83672EC2B806E7900F9C8B6 /* Preview Content */,
+				8577123A2B81ADB2008B3890 /* Launch Screen.storyboard */,
+				8577123C2B81AEC9008B3890 /* AppDelegate.swift */,
 			);
 			path = highthon;
 			sourceTree = "<group>";
@@ -224,6 +231,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E84BE7AE2B81130A00813EC0 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				E84BE7B12B81136600813EC0 /* UploadViewModel.swift */,
+				E84BE7B32B814CD000813EC0 /* WriteView.swift */,
+				E84BE7B72B815C7500813EC0 /* UploadEndView.swift */,
+				E84BE7B92B81667E00813EC0 /* TagAddView.swift */,
+				857712382B818613008B3890 /* WriteViewModel.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
 		EACC34572B80D7A2009A4F41 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,17 +251,6 @@
 				EACC345C2B80D7E6009A4F41 /* SignUpViewModel.swift */,
 			);
 			path = Signup;
-			sourceTree = "<group>";
-		};
-		E84BE7AE2B81130A00813EC0 /* Upload */ = {
-			isa = PBXGroup;
-			children = (
-				E84BE7B12B81136600813EC0 /* UploadViewModel.swift */,
-				E84BE7B32B814CD000813EC0 /* WriteView.swift */,
-				E84BE7B72B815C7500813EC0 /* UploadEndView.swift */,
-				E84BE7B92B81667E00813EC0 /* TagAddView.swift */,
-			);
-			path = Upload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8577123B2B81ADB2008B3890 /* Launch Screen.storyboard in Resources */,
 				857711F52B80BFBE008B3890 /* Pretendard-Regular.otf in Resources */,
 				857711F62B80BFBE008B3890 /* Pretendard-Medium.otf in Resources */,
 				E83672EE2B806E7900F9C8B6 /* Preview Assets.xcassets in Resources */,
@@ -328,11 +337,11 @@
 				E83672E72B806E7800F9C8B6 /* ContentView.swift in Sources */,
 				857712152B80C8E5008B3890 /* ProfileView.swift in Sources */,
 				E83672E92B806E7800F9C8B6 /* Item.swift in Sources */,
-				8577120F2B80C803008B3890 /* SigninViewModel.swift in Sources */,
 				E84BE7AD2B810C6E00813EC0 /* ActionSheetView.swift in Sources */,
 				857712222B80EAEE008B3890 /* HomeListView.swift in Sources */,
 				857712112B80C815008B3890 /* NotificationView.swift in Sources */,
 				EACC345D2B80D7E6009A4F41 /* SignUpViewModel.swift in Sources */,
+				8577123D2B81AEC9008B3890 /* AppDelegate.swift in Sources */,
 				EACC34592B80D7C4009A4F41 /* SignupView.swift in Sources */,
 				EACC34652B811382009A4F41 /* DetailsView.swift in Sources */,
 				857712092B80C77D008B3890 /* SearchViewModel.swift in Sources */,
@@ -341,6 +350,7 @@
 				857712262B810379008B3890 /* HomeModel.swift in Sources */,
 				857712132B80C81F008B3890 /* NotificationViewModel.swift in Sources */,
 				E84BE7AB2B80F3F400813EC0 /* ArrowView.swift in Sources */,
+				857712392B818613008B3890 /* WriteViewModel.swift in Sources */,
 				857712072B80C772008B3890 /* HomeViewModel.swift in Sources */,
 				8577121D2B80CAF4008B3890 /* PostView.swift in Sources */,
 				8577122B2B812788008B3890 /* API.swift in Sources */,
@@ -494,7 +504,7 @@
 				INFOPLIST_FILE = highthon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -527,7 +537,7 @@
 				INFOPLIST_FILE = highthon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

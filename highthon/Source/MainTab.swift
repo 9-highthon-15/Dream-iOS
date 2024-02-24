@@ -31,6 +31,7 @@ struct MainTab: View {
                     Image(systemName: "person")
                 }
         }
+        .accentColor(.main400)
     }
 }
 

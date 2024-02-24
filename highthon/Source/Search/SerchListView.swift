@@ -30,7 +30,7 @@ struct SearchListView: View {
                             }
                             
                             HStack {
-                                ForEach(["아시아요리", "레시피공유", "요리맛집"], id: \.self) { tag in
+                                ForEach(["요리", "레시피공유", "요리맛집"], id: \.self) { tag in
                                     Button(action: { }) {
                                         Text(tag)
                                     }

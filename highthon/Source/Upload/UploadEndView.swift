@@ -8,42 +8,39 @@
 import SwiftUI
 
 struct UploadEndView: View {
-    @State var tag: String = ""
-    @State var tags: [String] = []
-    
-    @State var titleInput: String = ""
-    @State var tagInput: String = ""
     
     @State var receiveButton = false
     @State var giveButton = false
-    
+    @StateObject private var viewModel = WriteViewModel()
+    @Environment(\.dismiss) var dismissAction
+
     let layout = [
         GridItem(.adaptive(minimum: 100))
     ]
     
     var body: some View {
         
-            NavigationView {
-                VStack(alignment: .leading, spacing: 0) {
-                    HStack {
-                        Text("새로운 게시물")
-                            .foregroundColor(Color.gray900)
-                            .font(.custom("Pretendard-Medium", size: 16))
-                            
-                        Spacer()
-                        NavigationLink(
-                            destination: WriteView()){
-                                Text("다음")
-                                    .foregroundStyle(Color.main400)
-                                    .font(.custom("Pretendard-Medium", size: 20))
-                                    .cornerRadius(8)
-                            }
-                    }
-                    .padding(.top, 20)
-                    .padding(.horizontal, 35)
+        NavigationView {
+            VStack(alignment: .leading, spacing: 0) {
+                HStack {
+                    Text("새로운 게시물")
+                        .foregroundColor(Color.gray900)
+                        .font(.custom("Pretendard-Medium", size: 16))
                     
-                    Spacer().frame(height: 37.5)
-                    ScrollView {
+                    Spacer()
+                    NavigationLink(
+                        destination: WriteView()){
+                            Text("다음")
+                                .foregroundStyle(Color.main400)
+                                .font(.custom("Pretendard-Medium", size: 20))
+                                .cornerRadius(8)
+                        }
+                }
+                .padding(.top, 20)
+                .padding(.horizontal, 35)
+                
+                Spacer().frame(height: 37.5)
+                ScrollView {
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 342, height: 16)
@@ -63,10 +60,10 @@ struct UploadEndView: View {
                         .foregroundStyle(Color.gray900)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading,35)
-                        
+                    
                     Spacer().frame(height:8)
                     
-                    TextField("제목 입력", text: $titleInput)
+                    TextField("제목 입력", text: $viewModel.title)
                         .foregroundStyle(Color.gray500)
                         .font(.custom("Pretendard-Regular", size: 14))
                         .padding(.horizontal, 20)
@@ -84,6 +81,7 @@ struct UploadEndView: View {
                     Spacer().frame(height:8)
                     HStack {
                         Button {
+                            viewModel.give = false
                             receiveButton.toggle()
                             giveButton = false
                         } label: {
@@ -102,6 +100,7 @@ struct UploadEndView: View {
                         }
                         
                         Button {
+                            viewModel.give = true
                             giveButton.toggle()
                             receiveButton = false
                         } label: {
@@ -131,7 +130,7 @@ struct UploadEndView: View {
                     Spacer().frame(height:8)
                     
                     ZStack {
-                        TextField("태그 입력", text: $tag)
+                        TextField("태그 입력", text: $viewModel.tag)
                             .foregroundStyle(Color.gray500)
                             .font(.custom("Pretendard-Regular", size: 14))
                             .padding(.horizontal, 20)
@@ -142,8 +141,8 @@ struct UploadEndView: View {
                         HStack {
                             Spacer()
                             Button {
-                                tags.append(tag)
-                                tag = ""
+                                viewModel.tags.append(viewModel.tag)
+                                
                             } label: {
                                 Text("추가")
                                     .foregroundStyle(Color.main400)
@@ -152,7 +151,7 @@ struct UploadEndView: View {
                             }
                         }
                     }
-                    TagAddView(tags: $tags)
+                    TagAddView(tags: $viewModel.tags)
                 }
             }
         }
@@ -166,3 +165,4 @@ func addView() -> some View {
 #Preview {
     UploadEndView()
 }
+

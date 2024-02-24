@@ -14,7 +14,6 @@ struct HomeListView: View {
         ScrollViewReader { proxy in
             
             ZStack(alignment: .bottomTrailing) {
-//                CustomActionSheet(isPresented: $viewModel.isShowingActionSheet)
                 List(viewModel.posts, id: \.self) { post in
                     if [post.give, nil].contains(viewModel.selectedButton) {
                         VStack {
@@ -23,11 +22,20 @@ struct HomeListView: View {
                                     .font(.custom("Pretendard-SemiBold", size:20))
                                     .foregroundColor(Color.gray900)
                                 Spacer()
-                                Button(action: {
-                                    viewModel.isShowingActionSheet = true
-                                }) {
+                                Menu {
+                                    Button(action: {
+                                    }) {
+                                        Label("약속잡기", systemImage: "calendar")
+                                    }
+                                    
+                                    Button(action: {
+                                    }) {
+                                        Label("신고하기", systemImage: "exclamationmark.bubble")
+                                            .foregroundColor(.red)
+                                    }
+                                } label: {
                                     Image(systemName: "ellipsis")
-                                        .foregroundColor(Color.gray800)
+                                        .foregroundColor(Color.gray)
                                 }
                             }
                             
@@ -78,6 +86,9 @@ struct HomeListView: View {
                     viewModel.homeList()
                     print("state.posts")
                 }
+                .refreshable {
+                    viewModel.homeList()
+                }
                 
                 
                 
@@ -94,17 +105,10 @@ struct HomeListView: View {
                         .background(Color.main300)
                         .cornerRadius(50)
                 }
-                .frame(width: 50, height: 50, alignment: .bottomTrailing)
-                .background(Color.main300)
-                .cornerRadius(50)
-                .padding(50)
-                .padding(.trailing, -50)
             }
-            
         }
     }
 }
-
 
 #Preview {
     HomeListView()
